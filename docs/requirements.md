@@ -55,8 +55,20 @@ S1/S2/S3 共用同一个 Service,CLI 只是薄壳。
 | 股票 | Tushare Pro | 免费积分制 | 阶段 3 |
 | 股票(海外) | Alpha Vantage | 25 次/天 | 备选 |
 | 企业信息 | 企查查开放平台 | 无免费层,小额充值 | 阶段 3(可选) |
-| 社媒数据 | 第三方数据服务商(如极致了数据类,采集类 API) | 有免费试用额度 | 阶段 3(可选) |
+| 社媒数据 | 第三方数据服务商(见下方候选清单) | 见下方 | 阶段 3(可选) |
 | 天气 | OpenWeatherMap | 免费层大 | 练手样本(可选) |
+
+**抖音/社媒数据 API 候选清单**(阶段 3 接入,2026-09 已核实;国内抖音与海外 TikTok 的覆盖度以各家文档为准):
+
+| 服务商 | 覆盖 | 免费额度 |
+|--------|------|---------|
+| 极致了数据 | 抖音:视频/评论/粉丝画像/直播等 17 类 | 新用户免费试用额度 |
+| EchoTik | TikTok:达人/视频/直播/商品/榜单 | 注册送 100 次调用 |
+| ScrapeCreators | 多平台社媒(含 TikTok) | 100 credits |
+| SociaVault | 多平台社媒(含 TikTok),有 MCP | 50 credits |
+| EnsembleData | TikTok 深度覆盖(~20 个 endpoint) | 试用额度 |
+| Social Fetch | 多平台统一 schema(含 TikTok Shop/广告/转写) | 100 credits,免信用卡 |
+| Apify(TikTok Scraper 等 Actor) | 可配置抓取,海量 Actor 市场 | $5/月平台额度 |
 
 ## 4. 非功能需求
 
