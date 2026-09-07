@@ -70,6 +70,8 @@ S1/S2/S3 共用同一个 Service,CLI 只是薄壳。
 | Social Fetch | 多平台统一 schema(含 TikTok Shop/广告/转写) | 100 credits,免信用卡 |
 | Apify(TikTok Scraper 等 Actor) | 可配置抓取,海量 Actor 市场 | $5/月平台额度 |
 
+**接入顺序**(按场景与体量,2026-09 核定):① 极致了数据(唯一直接覆盖国内抖音,API 形态最简)→ ② EchoTik(海外 TikTok 首选,51–200 员工、天使轮 $200 万+)→ ③ EnsembleData(TikTok 备选,endpoint 最全)→ ④ Apify(通用兜底,计费模型复杂故最后)。
+
 ## 4. 非功能需求
 
 - **延迟**:中转层附加延迟 P95 < 50ms(不含服务商自身响应时间)
