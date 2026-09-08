@@ -46,19 +46,20 @@ S1/S2/S3 共用同一个 Service,CLI 只是薄壳。
 | FR7 | CLI | `toolroll login / search / scrape / usage`,支持 `--json` |
 | FR8 | 用量查询 | API + CLI,按天/按服务商汇总 |
 
-**首批服务商**(测试期免费额度足够):
+**首批接入清单**(2026-09-08 已定,全部有 HTTP API,官方 MCP/CLI 仅作 schema 参考):
 
-| 类别 | 服务商 | 免费额度 | 阶段 |
-|------|--------|---------|------|
-| 搜索 | Tavily | 1000 credits/月 | 阶段 1(MVP 首家) |
-| 抓取 | Firecrawl | 1000 credits/月 | 阶段 3 |
-| 股票 | Tushare Pro | 免费积分制 | 阶段 3 |
-| 股票(海外) | Alpha Vantage | 25 次/天 | 备选 |
-| 企业信息 | 企查查开放平台 | 无免费层,小额充值 | 阶段 3(可选) |
-| 社媒数据 | 第三方数据服务商(见下方候选清单) | 见下方 | 阶段 3(可选) |
-| 天气 | OpenWeatherMap | 免费层大 | 练手样本(可选) |
+| 服务商 | 类别 | 免费额度 | 官方形态 | 阶段 |
+|--------|------|---------|---------|------|
+| Tavily | 搜索 | 1000 credits/月 | REST + MCP | **阶段 1(MVP 首家)** |
+| Firecrawl | 抓取 | 1000 credits/月 | REST + MCP | 阶段 3 |
+| 极致了数据 | 国内抖音 | 试用额度 | REST(GET) | 阶段 3 |
+| 高德地图 | 地图 | 有免费额度 | REST + MCP | 阶段 3 |
+| 企查查 | 企业信息 | 无免费层,小额充值 | REST | 阶段 3 |
+| Tushare Pro | 股票 | 免费积分制 | REST(POST) | 阶段 3 |
 
-**抖音/社媒数据 API 候选清单**(阶段 3 接入,2026-09 已核实;国内抖音与海外 TikTok 的覆盖度以各家文档为准):
+**后续候选**(首批之外,按需再加):EchoTik、EnsembleData(海外 TikTok)、Apify(通用兜底)、Serper/Jina Reader/OpenWeatherMap(低价搜索/转markdown/练手)等,见下方候选清单与历史上讨论过的全量清单。
+
+**社媒数据后续候选清单**(极致了数据已入首批;国内抖音与海外 TikTok 的覆盖度以各家文档为准):
 
 | 服务商 | 覆盖 | 免费额度 |
 |--------|------|---------|
@@ -70,7 +71,7 @@ S1/S2/S3 共用同一个 Service,CLI 只是薄壳。
 | Social Fetch | 多平台统一 schema(含 TikTok Shop/广告/转写) | 100 credits,免信用卡 |
 | Apify(TikTok Scraper 等 Actor) | 可配置抓取,海量 Actor 市场 | $5/月平台额度 |
 
-**接入顺序**(按场景与体量,2026-09 核定):① 极致了数据(唯一直接覆盖国内抖音,API 形态最简)→ ② EchoTik(海外 TikTok 首选,51–200 员工、天使轮 $200 万+)→ ③ EnsembleData(TikTok 备选,endpoint 最全)→ ④ Apify(通用兜底,计费模型复杂故最后)。
+**社媒后续接入顺序**(按场景与体量,2026-09 核定):极致了数据已入首批;海外 TikTok 后续按 ② EchoTik(首选,51–200 员工、天使轮 $200 万+)→ ③ EnsembleData(endpoint 最全)→ ④ Apify(通用兜底,计费模型复杂故最后)。
 
 ## 4. 非功能需求
 
