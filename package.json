@@ -1,0 +1,16 @@
+{
+  "name": "toolroll",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Unified gateway for AI tool APIs - one platform key for all providers / 一个平台 key 调用所有工具类 API",
+  "scripts": {
+    "dev": "pnpm --filter @toolroll/service dev",
+    "e2e": "node apps/service/test/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

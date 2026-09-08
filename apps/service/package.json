@@ -1,0 +1,22 @@
+{
+  "name": "@toolroll/service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1",
+    "@toolroll/core": "workspace:*",
+    "@toolroll/adapters-tavily": "workspace:*",
+    "hono": "^4",
+    "pg": "^8"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8",
+    "tsx": "^4"
+  }
+}
